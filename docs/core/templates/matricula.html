@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css %} 
+    <link href="{% static 'matricula.css'%}" type="text/css" rel="stylesheet">
+{% endblock %}
+{%block script%}
+    <script type="text/javascript" src="{% static 'matricula.js'%}"></script>
+{%endblock%}
+{%block conteudo%}
+    <form class="lista" action="" method="post" id="lista_mat" onsubmit="validacaoMatricula(this); return false;">
+    {% for aluno in alunos%}
+        <div class="colunas">
+        <label>{{aluno.nome}}</label> <br/>
+        <label>{{aluno.RA}}</label> <br/>
+        <input type="radio" name="{{aluno.nome}}" value="aprovado" class="InputAprovado">Aprovado<input type="radio" name="{{aluno.nome}}" class="InputReprovado" value="reprovado">Reprovado<br/>
+        </div>
+    {%endfor%}
+        <div class="botao">
+            <input type="submit" id="enviar"/>
+        </div>
+    </form>
+{%endblock%}

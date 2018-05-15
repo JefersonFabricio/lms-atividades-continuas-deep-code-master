@@ -1,0 +1,9 @@
+Correção:
+
+Matrícula:
+Não está passando com o número certo de candidatos (algo em relação a sua classe)
+
+NovoAluno:
+Validação de CPF não funciona ao salvar, apenas ao sair do campo.
+
+Nota 8,0

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<table border="1" width="100%">
+    <tr>
+        <th>Ações</th>
+        <th>Nome</th>
+    </tr>
+{% for lista in listas  %}
+    <tr>
+        <td>
+            <a href="">Alterar</a><br/>
+            <a href="">incluir</a><br/>
+            <a href="">Remover</a>
+        </td>
+        <td>{{ lista.nome }}</td>
+    </tr>
+{% endfor %}
+</table>
+{% endblock conteudo %}

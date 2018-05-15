@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css %}
+    <link href="{% static 'cursos.css'%}" type="text/css" rel="stylesheet">
+{% endblock %}
+{%block conteudo%}
+    <div>
+        <h1 class="titulo-pagina">CURSOS</h1>
+        </div>
+        {%for c in cursos%}
+        <div class="containers" id="cursos">
+            <div class="card">
+                <img src="{{c.img}}" class="imagemCurso">
+                <h2 class="nomeCurso"><a href="{{ c.link }}">{{ c.nome }}</a></h2>
+                <p class="resumoCurso">
+                    {{c.resumo}}
+                </p>
+                <br><a href="{{ c.link }}" class="link_c">Saiba mais</a></br>
+            </div>
+        </div>
+{%endfor%}
+{%endblock%}

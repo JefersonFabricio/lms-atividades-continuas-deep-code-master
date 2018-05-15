@@ -1,0 +1,16 @@
+Correção:
+
+Veio com problemas no urls.py, mapeando uma URL de contato que não existe.
+
+As urls dentro da aplicação core não estão incluídas no URLS padrão,
+nao consigo navegar na aplicação de vocês.
+
+Vocês estão mapeando caminhos para páginas HTML, isso é uma má prática!
+
+A lista de cursos não tem os nomes dos cursos, não consigo saber qual é qual. Também
+não consigo entrar nos detalhes de cada curso.
+
+o restante dos requisitos está ok, tomem cuidado com as coisas listadas acima!
+
+Nota: 6,5
+

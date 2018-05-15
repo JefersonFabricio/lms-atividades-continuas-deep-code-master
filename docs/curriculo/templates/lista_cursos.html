@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+    <h1>Lista Cursos</h1>
+    <a href='/cursos/incluir/'>Incluir novo Curso</a>
+    <div >
+    <table border='1' width='600px' >
+        <tr>
+            <th>Ações</th>
+            <th>Nome</th>
+            <th>Sigla</th>
+        </tr>
+    {% for curso  in cursos  %}
+        <tr>
+            <td>
+                <a href='/cursos/alterar/{{ curso.id }}'>Alterar</a><br/>
+                <a href=''>Remover</a>
+            </td>
+            <td>{{ curso.nome }}</td>
+            <td>{{ curso.sigla }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+    </div>
+{% endblock conteudo %}

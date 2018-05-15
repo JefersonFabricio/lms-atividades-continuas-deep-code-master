@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css %} 
+    <link href="{% static 'formularios.css'%}" type="text/css" rel="stylesheet">
+{% endblock %}
+{%block conteudo%}
+<form action="/processa-dados-disciplina" method="post">
+    <div>
+        <label for="sltCurso">Curso: </label>
+        <select name="sltCurso">
+            <option value="" selected disabled hidden>Selecione</option>
+            <option value="opAds">Análise e Desenvolvimento de Sistemas</option>
+            <option value="opBd">Banco de Dados</option>
+            <option value="opGti">Gestão da Tecnologia da Informação</option>
+        </select>
+    </div>    
+    <div>
+        <label for="txtNome">Nome da Disciplina: </label>
+        <input type="text" name="txtNome"/>
+    </div>
+    <div>
+        <label for="rdoSemestre">Semestre: </label>
+        <input type="radio" name="rdoSemestre" value="Sem1"/>1º
+        <input type="radio" name="rdoSemestre" value="Sem2"/>2º
+        <input type="radio" name="rdoSemestre" value="Sem3"/>3º
+        <input type="radio" name="rdoSemestre" value="Sem4"/>4º
+        <input type="radio" name="rdoSemestre" value="Sem5"/>5º
+        <input type="radio" name="rdoSemestre" value="Sem6"/>6º
+        <input type="radio" name="rdoSemestre" value="Sem7"/>7º
+        <input type="radio" name="rdoSemestre" value="Sem8"/>8º
+    </div>
+    <div>
+        <label for="nmrDuracaoHoras">Carga Horária: </label>
+        <input type="number" name="nmrDuracaoHoras"> horas
+    </div>
+    <div>
+        <button type="reset">Limpar</button>
+        <button type="submit">Criar Curso</button>
+    </div>
+</form>
+{%endblock%}

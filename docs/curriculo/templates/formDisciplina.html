@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block conteudo %}
+    {% if disciplina.id %}
+    <h1>Alterando Disciplina</h1>
+    {% else %}
+    <h1>Nova Disciplina</h1>
+    {% endif %}
+    <form method="POST" action=''>
+        <p>
+            nome: <input name='nome' required maxlength="255" value='{{ disciplina.nome }}' /> <br>
+            data: <input name='data' required value='{{ disciplina.data }}' /><br>
+            planodeensino: <input name='planodeensino' required maxlength="2000" value='{{ disciplina.planodeensino}}' /><br>
+            competencias: <input name='competencias' required maxlength="500" value='{{ disciplina.competencias}}' /><br>
+            status: <input name='status' required maxlength="500" value='{{ disciplina.status}}' /><br>
+            cargahoraria: <input name='cargahoraria' required value='{{ disciplina.cargahoraria}}' /><br>
+            habilidades: <input name='habilidades' required maxlength="500" value='{{ disciplina.habilidades}}' /><br>
+            ementa: <input name='ementa' required maxlength="500" value='{{ disciplina.ementa}}' /><br>
+            conteudoprogramatico: <input name='conteudoprogramatico' required maxlength="500" value='{{ disciplina.conteudoprogramatico}}' /><br>
+            bibliografiabasica: <input name='bibliografiabasica' required maxlength="500" value='{{ disciplina.bibliografiabasica}}' /><br>
+            bibliografiacomplentar: <input name='bibliografiacomplentar' required maxlength="500" value='{{ disciplina.bibliografiacomplentar}}' /><br>
+            percentualpratico: <input name='percentualpratico' required maxlength="500" value='{{ disciplina.percentualpratico}}' /><br>
+            percentualteorico: <input name='percentualteorico' required maxlength="500" value='{{ disciplina.percentualteorico}}' />
+            
+        </p>
+        <button>Enviar</button>
+    </form>
+{% endblock conteudo %}

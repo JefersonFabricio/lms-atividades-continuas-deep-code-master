@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css %}
+    <link href="{% static 'destalhes_disciplinas.css'%}" type="text/css" rel="stylesheet">
+{% endblock %}
+{%block conteudo%}
+    <h1>{{titulo_Pag}}</h1>
+
+<h2>Objetivo</h2>
+<p>
+{{ p1|safe|escape }}
+</p>
+<p>
+<h2>{{ titulo_Pag }}</h2>
+ {{ p2|safe|escape }}
+</p>
+<p>
+<h2>Competências</h2>
+{{ p3|safe|escape }}
+</p>
+<p>
+<h2>Critério de avaliação</h2>
+{{ avaliacao|safe|escape }}
+</p>
+<p>
+<h2>Bibliografia sugerida para estudo:</h2>
+{{ p3|safe|escape }}
+</p>
+<p>
+{{ biblio|safe|escape }}
+
+{% endblock  %}

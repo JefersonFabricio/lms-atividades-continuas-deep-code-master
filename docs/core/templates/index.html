@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css %} 
+    <link href="{% static 'index.css'%}" type="text/css" rel="stylesheet">
+{% endblock %}
+{% block conteudo %} 
+
+<div>
+        <div id="cursos"><br/>
+            <h1>CONHEÇA NOSSOS CURSOS</h1><br/>
+            <div class="conteinerIMG">
+                <img src="{% static 'img/ADS.jpg'%}"class="Imgindex"/>
+                <img src="{% static 'img/BD.jpg'%}" class="Imgindex"/>
+                <img src="{% static 'img/GTI.jpg'%}" class="Imgindex"/>
+            </div>
+
+            <p> Considerada uma das melhores faculdades com foco em tecnologia do País,
+                 a Faculdade Impacta oferece cursos de Graduação, Pós-Graduação e MBA e cursos técnicos.
+                  Conheça quais são as áreas de conhecimento que a Impacta aborda e saiba um pouco mais sobre
+                   cada curso:
+            </p>
+        </div>
+        <div id="Premios">
+               <h1> PRÊMIOS E RECONHECIMENTOS</h1><br/>
+                <div class="imgpremios">
+                    <img src="{% static 'img/enade-ADM.png'%}"class="premio"/>
+                    <img src="{% static 'img/enade-ADS.png'%}" class="premio"/>
+                    <img src="{% static 'img/enade-RD.png'%}" class="premio"/>
+                    <img src="{% static 'img/enade-SI.png'%}" class="premio"/>
+                </div>
+                <p>A Faculdade Impacta é altamente reconhecida por sua atuação no mercado da educação,
+                 o que comprova o compromisso da Instituição com o ensino de qualidade e a dedicação
+                  do Grupo Impacta em transformar a sociedade através da tecnologia. Desta maneira,
+                   ao longo dos anos a Faculdade Impacta tem recebido prêmios e reconhecimentos que 
+                   são resultados do trabalho contínuo de professores e funcionários e da determinação
+                    de seus alunos.
+                </p>
+        </div>
+        <div id="Eventos">
+                <h2>Confira os próximos eventos que os alunos e a Faculdade Impacta irão participar:
+                </h2>
+                <a href="http://www.impacta.com.br/landing-page/impacta-cloud/" class="eventos">
+                Impacta cloud -- a evolução da nuvem <br/>
+                07 de abril de 2018
+                </a><br/>
+                <br/>
+                <a href="http://www.impacta.com.br/eventos/05-04-2018-Carreiras-para-um-desenvolvedor-FrontEnd"class="eventos">
+                Carreiras para um desenvolvedor <br/>
+                05/04 -- horario 20h as 21:30h
+                </a>
+
+
+        </div>
+    </div>
+
+{% endblock %}

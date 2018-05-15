@@ -1,0 +1,21 @@
+.conteinerIMG{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+.Imgindex{
+    width: 25%;
+    height: 15%;
+}
+.premio{
+    width: 10%;
+    height: 12%;
+}
+.imgpremios{
+    display: flex;
+    justify-content: center 
+}
+.eventos{
+    color: cornsilk;
+    text-decoration: none;
+}

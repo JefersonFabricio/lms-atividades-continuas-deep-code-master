@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block conteudo %}
+    <a href='/disciplinas/incluir/'>Incluir nova Disciplina</a>
+    <table border='1' width='600px'>
+        <tr>
+            <th>Nome</th>
+            <th>Ações</th>
+        </tr>
+    {% for disciplina  in disciplinas  %}
+        <tr>
+            <td>{{ disciplina.nome }}</td>
+            <td>
+                <a href='/disciplinas/alterar/{{disciplina.id}}'>Alterar</a><br/>
+                <a href=''>Remover</a>
+            </td>
+        </tr>
+    {% endfor %}
+    </table>
+{% endblock conteudo %}

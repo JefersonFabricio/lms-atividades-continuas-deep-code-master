@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css %}
+    <link href="{% static 'pagina_disciplina.css'%}" type="text/css" rel="stylesheet">
+{% endblock %}
+{%block conteudo%}
+<div>
+        <h1> <center>-------------------- Analise e Desenvolvimento de Sistemas -------------------- </center> </h1>
+        <h2> <center> Disciplias de Curso </center> </h2>
+            <table border='1' width='100%'>
+        <tr>
+        <th>semestre</th>
+        <th>disciplina</th>
+        <th>carga horária</th>
+
+    </tr>
+    <tr>
+            <td rowspan='6'>1º semestre</td>
+            <td>comunicação e expressão</td><td rowspan='6'>80 horas</td></tr><tr><td>fundamento de banco de dados</td></tr><tr><td>Introdução à Internet das Coisas - IoT</td></tr>
+    <tr><td>Linguagem de Programação I</td></tr>
+    <tr>
+            <td><a href="detalhes-da-disciplina.html">Logica de programação</a></td>
+    </tr>
+    <tr>
+            <td>Matemática Aplicada</td>
+    </tr>
+    <tr>
+            <td rowspan='8'>2º semestre</td>
+            <td>Linguagem de Programação II</td>
+            <td rowspan='5'>80 horas</td>
+    </tr>
+    <tr>
+            <td>Linguagem SQL</td>
+    </tr>
+    <tr>
+            <td>Tecnologia Web</td>
+    </tr>
+    <tr>
+            <td>Engenharia de Software</td>
+    </tr>
+    <tr>
+            <td>Ambiente de Desenvolvimento e Operação - DevOps</td>
+    </tr>
+    <tr>
+            <td>Linguagem Brasileira de Sinais - LIBRAS</td>
+            <td rowspan='3'>40 horas</td>
+    </tr>
+    <tr>
+            <td>Sociedade e Sustentabilidade</td>
+    </tr>
+    <tr>
+            <td>Gestão de Projetos</td>
+    </tr>
+    <tr>
+            <td rowspan='6'>3º semestre</td>
+            <td>Desenvolvimento de Aplicações Distribuídas</td>
+            <td rowspan='4'>80 horas</td>
+    </tr>
+    <tr>
+            <td>Estrutura de Dados</td>
+    </tr>
+    <tr>
+            <td>Análise e Modelagem de Sistemas</td>
+    </tr>
+    <tr>
+            <td>Modelagem de Processos de Negócio</td>
+    </tr>
+    <tr>
+            <td>Interface Homem-Computador</td>
+            <td rowspan='1'>40 horas</td>
+    </tr>
+    <tr>
+            <td>OPE1 - Oficina Projeto Empresa 1</td>
+            <td>120 horas</td>
+    </tr>
+    <tr>
+            <td rowspan='6'>4º semestre</td>
+            <td>Arquitetura e Projeto de Sistemas</td>
+            <td rowspan='4'>80 horas</td>
+    </tr>
+    <tr>
+            <td>Desenvolvimento para Dispositivos Móveis</td>
+    </tr>
+    <tr>
+            <td>Desenvolvimento para Internet das Coisas</td>
+    </tr>
+    <tr>
+            <td>Qualidade de Software</td>
+    </tr>
+    <tr>
+            <td>OPE2 - Oficina Projeto Empresa 2OPE2 - Oficina Projeto Empresa 2</td>
+            <td>120 horas</td>
+    </tr>
+    <tr>
+            <td>Legislação e Ética</td>
+            <td>40 horas</td>
+    </tr>
+
+    </table>
+    </div>
+{%endblock%}

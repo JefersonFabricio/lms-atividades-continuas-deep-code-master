@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="{% static 'style.css'%}" rel="stylesheet">
+        {% block css%}
+        {% endblock%}
+    </head>
+    <body>
+            <header>
+                    <div class="menus" id="cabecalho">
+                        <img src="{% static 'img/deeplogo.png'%}">
+                        <nav id="Menu">
+                            <ul><a class='cor_menu' href="index.html"><p id="Pmenu">Home</a></ul>
+                            <ul>   <a class='cor_menu' href="cursos.html">Cursos</a></ul>
+                            <!--ul>   <a class='cor_menu' href="nova_disciplina">Novas Disciplinas</a></ul-->
+                            <!--ul>   <a class='cor_menu' href="novo_curso">Novos Cursos</a></ul-->
+                            <ul>   <a class='cor_menu' href="login">Login</a></ul>
+                        </nav>
+                    </div>
+                   
+            </header>
+
+
+            <main>
+                {% block conteudo %}
+                {% endblock %}
+            </main>
+            <footer class="footer">
+                <p>"Valorize os pequenos começos"</p>
+            </footer>
+
+
+    </body>
+    {% block script%}
+    {% endblock%}
+</html>

@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css %} 
+    <link href="{% static 'novo_aluno.css'%}" type="text/css" rel="stylesheet">
+{% endblock %}
+{% block script%}
+   
+    <script type="text/javascript" src="{% static 'novo_aluno.js'%}"></script>
+{% endblock%}
+{%block conteudo%}
+
+    <h1 class="titulo">Novo Aluno</h1>
+        <h2 class="titulo">Cadastro de dados</h2>
+        <div class="formulario">
+        <!-- <form class="n_aluno" name="n_aluno" action="" method="post" onsubmit="validacaoNovoAluno(this); return false;"> -->
+        <form method="POST">
+            {% csrf_token %}
+            {{ form }}
+            <!-- <div class="label">
+            <label for="login">Login:</label>
+            </div>
+            <div class="entrada">
+            <input type="text" name="n_login" id="n_login">
+            </div>
+            <div class="label">
+            <label for="n_nomec">Nome Completo:</label>
+            </div>
+            <div class="entrada">
+            <input type="text" name="n_nomec" id="n_nomec">
+            </div>
+            <div class="label">
+            <label for="email">E-mail</label>
+            </div>
+            <div class="entrada">
+            <input type="email" name="n_email" id="n_email">
+            </div>
+            <div class="label">
+            <label for="celular">Celular:</label>
+            </div>
+            <div class="entrada">
+            <input type="number" name="n_cel" id="n_cel">
+            </div>
+            <div class="label">
+            <label for="senha">Senha</label>
+            </div>
+            <div class="entrada">
+            <input type="password" name="n_senha" id="n_senha">
+            </div>
+            <div class="label">
+            <label for="c_senha">Confirmação de Senha</label>
+            </div>
+            <div class="entrada">
+            <input type="password" name="n_csenha" id="n_csenha">
+            </div> -->
+            <div class="submit_btn">
+            <input class="s_btn" type="submit" value="Enviar" id='enviar'>
+            </div>
+        </form>
+        </div>
+
+{%endblock%}

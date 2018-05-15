@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css %} 
+    <link href="{% static 'login.css'%}" type="text/css" rel="stylesheet">
+{% endblock %}
+{%block conteudo%}
+<div>
+        <h1 class="titulo-pagina">Login</h1>
+
+
+        <div id="container">
+        <div id="dlog">
+            <label for="email">Email:</label>
+        </div>
+        <div id="dlog1">
+            <input name="email" type="email" id="email">
+        </div>
+        <div id="dlog">
+            <label for="pwd">Password:</label>
+        </div>
+        <div id="dlog1">
+             <input name="pwd" type="password" id="pwd">
+        </div>
+            <br>
+        <div id="dbut1">
+            <button type='submit' id="dbut">Login</button>
+         </div>
+         <br>
+         <div id="rem">
+            <input type="checkbox" name="remember" id="remember" value="rem">Lembre-se de mim
+            </div>
+        </div>
+{%endblock%}

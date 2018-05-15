@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul> 
+        {% for mensagem in mensagens %}
+            <li> 
+                {{ mensagem.nome }}
+                <a href="atualizar_mensagem/{{mensagem.id}}">
+                   Editar 
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'nova_mensagem' %}">Nova Mensagem</a>
+    <a href="{% url 'nova_mensagem' %}">remover Mensagem</a>
+
+</body>
+</html>

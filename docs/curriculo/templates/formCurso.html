@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block conteudo %}
+    {% if curso.id %}
+    <h1>Alterando Curso</h1>
+    {% else %}
+    <h1>Novo Curso</h1>
+    {% endif %}
+    <form method="POST" action=''>
+        <p>
+            Nome: <input name='nome' required maxlength="255" value='{{ curso.nome }}' />
+            Sigla: <input name='sigla' required maxlength="3" value='{{ curso.sigla }}' />
+        </p>
+        <button>Enviar</button>
+    </form>
+{% endblock conteudo %}

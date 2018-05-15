@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css %}
+	<link href="{% static 'destalhes_cursos.css'%}" type="text/css" rel="stylesheet">
+	<link href="{% static 'cursos.css'%}" type="text/css" rel="stylesheet">
+{% endblock %}
+{%block conteudo%}
+<h1>{{titulo_pag|safe|escape}}</h1>
+		<h2>Detalhes do curso</h2>
+		<p>{{p1|safe|escape}}</p>
+		<h1>Duração do curso:</h1>
+		{{duracao|safe|escape}}
+		<br><a href="{{ link }}" class="link_c">Disciplinas</a></br>
+
+			<!--------------  COORDENADOR DO CURSO   ---------------->
+
+			<br><div id="coordenador_curso_ads"><br>
+				<section class="box box-2"><br>
+					<br><p><h2 class="section_title text-center">Coordenador</h2></p>
+					<div class="box box-2 text-center">
+						<h3>{{coord|safe|escape}}</h3>
+						{{sobre|safe|escape}}
+					</div>
+				</section>
+			</div>
+{%endblock%}

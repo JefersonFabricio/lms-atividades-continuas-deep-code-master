@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css %}
+    <link href="{% static 'pagina_disciplina.css'%}" type="text/css" rel="stylesheet">
+{% endblock %}
+{%block conteudo%}
+<div>
+        <h1> {{ curso }} </h1>
+        <h2>Disciplinas de Curso </h2>
+            <table border='1'>
+        <tr>
+
+
+    </tr>
+    <tr>
+            <h2>1º semestre</h2>
+            {{um|safe|escape}}
+            <h2>2º semestre</h2>
+            {{dois|safe|escape}}
+            <h2>3º semestre</h2>
+            {{quatro|safe|escape}}
+            <h2>4º semestre</h2>
+            {{quatro|safe|escape}}
+
+    </table>
+    </div>
+{%endblock%}

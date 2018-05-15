@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css %} 
+    <link href="{% static 'novo_aluno.css'%}" type="text/css" rel="stylesheet">
+{% endblock %}
+{% block script%}
+   
+    <!-- <script type="text/javascript" src="{#% static 'novo_aluno.js'%}"></script> -->
+{% endblock%}
+{%block conteudo%}
+
+    <h1 class="titulo">Novo Coordenador</h1>
+        <h2 class="titulo">Cadastro de dados</h2>
+        <div class="formulario">
+        <!-- <form class="n_aluno" name="n_aluno" action="" method="post" onsubmit="validacaoNovoAluno(this); return false;"> -->
+        <form method="POST">
+            {% csrf_token %}
+            {{ form }}
+            <div class="submit_btn">
+            <input class="s_btn" type="submit" value="Enviar" id='enviar'>
+            </div>
+        </form>
+        </div>
+
+{%endblock%}

@@ -1,0 +1,21 @@
+/*CSS Detalhes da discplina*/
+table, td, th, tfoot {border:solid 1px #000; padding:5px;}
+th {background-color: black;}
+
+/*CSS Detalhes da discplina*/
+table, td, th, tfoot {border:solid 1px #000; padding:5px;}
+th {background-color:#E0FFFF;}
+
+
+caption {font-size:x-large;}
+colgroup {background:#adced3;}
+.coluna1 {background:#F66;}
+.coluna2  {background:#F33;}
+.coluna3  {background:#F33;}
+
+form{
+
+	margin-top: 8%;
+	padding-left:2%;
+	padding-right: 2%;
+}
